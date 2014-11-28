@@ -3,7 +3,8 @@
 	url = https://github.com/apache/zookeeper.git
 [submodule "boost-svn"]
 	path = boost-svn
-	url = https://github.com/datacratic/boost-svn.git
+	url = https://github.com/boostorg/boost.git
+    #url = https://github.com/datacratic/boost-svn.git
 [submodule "cityhash"]
 	path = cityhash
 	url = https://github.com/jeremybarnes/cityhash.git
