@@ -46,6 +46,3 @@
 [submodule "cairomm"]
 	path = cairomm
 	url = git://git.cairographics.org/git/cairomm
-[submodule "boost-svn"]
-	path = boost-svn
-	url = https://github.com/boostorg/boost.git
