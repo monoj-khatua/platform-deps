@@ -15,9 +15,9 @@ install_node:
 
 install_boost:
 	if [ ! -f boost-svn/b2 ] ; then cd boost-svn && ./bootstrap.sh --prefix=$(TARGET) ; fi
-	cd boost-svn && ./b2 -j$(JOBS) variant=release link=shared threading=multi runtime-link=shared toolset=gcc --without=graph --without-graph_parallel --without-mpi install
+	cd boost-svn && ./b2 headers -j$(JOBS) variant=release link=shared threading=multi runtime-link=shared toolset=gcc --without=graph --without-graph_parallel --without-mpi install
 clean_boost:
-	cd boost-svn && rm -rf ./b2 ./bin.v2 ./bjam ./bootstrap.log ./project-config.jam ./tools/build/v2/engine/bootstrap/ ./tools/build/v2/engine/bin.linuxx86_64/
+	cd boost-svn && rm -rf ./b2 ./bin.v2 ./bjam ./bootstrap.log ./project-config.jam ./tools/build/v2/engine/bootstrap/ ./tools/build/v2/engine/bin.linuxx86_64/ boost/
 
 install_userspacercu:
 	cd userspace-rcu/ && ./bootstrap && ./configure --prefix=$(TARGET) && make install

@@ -4,7 +4,7 @@ Container repo for Datacratic platform dependencies to be installed per-user
 
 After cloning run:
 
-    git submodule update --init && make
+    git submodule update --init --recursive && make
 
 ## Troubleshooting ##
 
